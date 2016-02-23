@@ -1,0 +1,230 @@
+$white = #fff
+$pink = #CC8B86  //pink
+$khaki = #f7e1d7  //khaki
+$bluegrey = #546a7b //blue grey
+$green = #b0c4b1 //green
+$totalAccent = #f3ed86
+
+// fonts
+$titlefont = 'Oxygen', sans-serif
+$contentfont = Tahoma, Geneva, sans-serif
+
+// breakpoint vars
+$mobilestart = 320px
+$smallstart = 480px
+$tabletstart = 768px
+$airstart = 992px
+$thunderstart = 1200px
+
+// Force Angular data bindings to wait{{}}
+[ng\:cloak] [ng-cloak] [data-ng-cloak] [x-ng-cloak] .ng-cloak .x-ng-cloak
+  display: none !important;
+
+.center
+  text-align center
+  margin 0 auto !important
+  float none !important
+
+body
+  background-color $white
+  font-family $contentfont
+  color $bluegrey
+
+  h1, h2, h3, h4, h5, h6
+    font-family $titlefont
+  h1 // titles
+    color $pink
+    &.section-titles
+      margin-top -17px
+      margin-bottom 15px
+  h2
+    color $green
+  h4 // content text
+    line-height 1.25em
+  
+  a
+    color $green
+    &:hover
+      text-decoration none
+      color $bluegrey
+      
+
+.navbar
+  background-color $white
+  box-shadow 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+
+.navbar-default
+  border none
+  
+.navbar-default .navbar-toggle span.icon-bar
+  width 25px 
+  height 4px
+  background-color $bluegrey
+
+.navbar-default .navbar-toggle
+  border none
+  margin-top 5px
+  margin-bottom 5px
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+  background-color #fff
+
+
+a.nav-buttons
+  cursor pointer
+
+a#helen-launcher
+  img
+    max-height 50px
+    max-width 50px
+  cursor url("/images/dog.png"), auto;
+
+
+.navbar-brand
+  padding-top 0 !important
+
+.jumbotron
+  background-color $pink
+  margin-bottom 0
+
+#sharkjaws
+  background-color #fff
+  background-image url("/images/helenvideo.gif")
+  background-size cover
+  background-position 60% center
+  border-radius 50%
+  margin auto
+  height 420px
+  width 420px
+  border 10px $green solid
+  margin-top 15px
+
+  @media screen and (max-width: $smallstart)
+    height 300px
+    width 300px
+  @media screen and (max-width: $tabletstart)
+    margin-top 30px
+
+#helen-hero
+  height 500px
+  text-align center
+  h1, h2
+    color RGBA(255, 255, 255, .65)
+    font-weight 600
+
+
+  @media screen and (max-width: $smallstart)
+    height 370px
+
+#instagram
+  background-color $khaki
+
+  a:hover
+    text-decoration none
+
+img.insta
+  max-width 100%
+  border-radius 50%
+  border 10px $green solid
+  margin-bottom 10px
+
+#qa
+  background-color $white
+
+  h4
+    margin-bottom 16px
+  .dashes
+    padding none
+    margin 0
+  .questions
+    padding none
+    margin-top 15px
+  .alt-background
+    background-color $khaki
+
+.feature
+  padding 30px 5%
+
+#schedule
+  background-color $white
+
+//DIRECTIVE STYLES
+div.marquee
+  white-space no-wrap
+  overflow hidden
+  color $pink
+
+div.marquee > div.marquee-text
+  white-space nowrap
+  display inline
+  width auto
+
+//SCHEDULE//
+#schedule-directive
+  hr
+    margin-top -5px
+  
+  .row img
+    width 100%
+    max-width 400px
+
+  .schedule-description
+    background-color $white
+    min-height 175px
+    text-align center
+    #desc-list
+      text-align center
+    ul
+      padding 0
+      list-style-type none
+
+// SHIN SHIN
+#shin-shin-directive
+  #youtube-container
+    text-align center
+    iframe
+      height 275px
+      // min-width 320px
+      width 450px
+      max-width 100%
+
+//HELEN DIRECTIVE
+#helen-directive
+  .modal-content
+    border-radius 50%
+    margin 0 auto
+    padding none
+    width 500px
+    height 500px
+    @media screen and (max-width: $smallstart)
+      height 320px
+      width 320px
+
+  .modal-dialog
+    margin 0 auto
+
+
+  .helen-image
+    border-radius 50%
+    height 100%
+    width 100%
+    border 12px solid $green
+  #modal-footer
+    margin 0 auto
+    text-align center
+  #next-pudge, #close-modal
+    margin-top 5px
+    border-radius 50%
+    border 2px solid $white
+    height 70px
+    width 70px
+  #next-pudge
+    margin-left 5px
+    background-color $green
+  #close-modal
+    margin-right 5px
+    background-color $pink
+
+hr 
+  border-top 2px dotted $green
