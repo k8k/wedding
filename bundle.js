@@ -31623,7 +31623,7 @@
 	    A: "¯\\_(ツ)_/¯"
 	  }, {
 	    Q: "Okay. Where can I stay?",
-	    A: ["We've booked a block of rooms at The Waterfront Hotel, which is one of the ", "nicer hotels in Oakland - the group rate code is KUCHIN-WALKER."].join('')
+	    A: ["We've booked a block of rooms at The Waterfront Hotel, which is one of the ", "nicer hotels in Oakland - the group name is kuchin-walker and the online code is 1610KUCHIN."].join('')
 	  }, {
 	    Q: "Damn, that hotel is expensive.",
 	    A: ["Yeah, it'll run you $289 a night, but it is right on the water in a great ", "part of town. That said, we realize that's a lot so we're working on ", "finding a more affordable spot. If you're inclined to investigate on ", "your own, give Emeryville hotels a shot or check out Airbnb."].join('')
@@ -31717,7 +31717,7 @@
 	      }, {
 	        image: './images/prawn-toasts-sketch.jpg',
 	        title: 'fri october 7, afternoonish',
-	        description: ['We \'re going down to SF City Hall to make it legal. We are trying ', 'to keep this portion of the celebration as low-key as possible. ', 'City Hall is stunning so people are more than welcome to come ', 'hang out, snap some pics, etc. but the ceremony itself ', 'will be about 30 seconds long and just us and our witness.'].join('')
+	        description: ['We \'re going down to SF City Hall to make it legal. We are trying ', 'to keep this portion of the celebration as low-key as possible. ', 'City Hall is stunning so people are more than welcome to come ', 'hang out, snap some pics, etc. but the ceremony itself ', 'will be about 30 seconds long and just us and our witness. The real party is the following day at Starline.'].join('')
 	      }, {
 	        image: './images/chinese-broccoli-sketch.jpg',
 	        title: 'fri october 7, eveningish',
