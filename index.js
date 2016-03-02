@@ -161,7 +161,7 @@ angular.module('app', [])
       Q: "Okay. Where can I stay?",
       A: [
         "We've booked a block of rooms at The Waterfront Hotel, which is one of the ",
-        "nicer hotels in Oakland - the group rate code is KUCHIN-WALKER."
+        "nicer hotels in Oakland - the group name is kuchin-walker and the online code is 1610KUCHIN."
       ].join('')
     },
         {

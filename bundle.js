@@ -662,7 +662,7 @@
 	__webpack_require__(4)();
 
 	var appModule = __webpack_require__(11);
-	console.log('bootstrapping angular');
+	// console.log('bootstrapping angular');
 
 	angular.element(document).ready(function () {
 	  angular.bootstrap(document, [appModule.name], {
@@ -720,7 +720,7 @@
 
 
 	// module
-	exports.push([module.id, "[ng:cloak] [ng-cloak] [data-ng-cloak] [x-ng-cloak] .ng-cloak .x-ng-cloak {\n  display: none !important;\n}\n.center {\n  text-align: center;\n  margin: 0 auto !important;\n  float: none !important;\n}\nbody {\n  background-color: #fff;\n  font-family: Tahoma, Geneva, sans-serif;\n  color: #546a7b;\n}\nbody h1,\nbody h2,\nbody h3,\nbody h4,\nbody h5,\nbody h6 {\n  font-family: 'Oxygen', sans-serif;\n}\nbody h1 {\n  color: #cc8b86;\n}\nbody h1.section-titles {\n  margin-top: -17px;\n  margin-bottom: 15px;\n}\nbody h2 {\n  color: #b0c4b1;\n}\nbody h4 {\n  line-height: 1.25em;\n}\nbody a {\n  color: #b0c4b1;\n}\nbody a:hover {\n  text-decoration: none;\n  color: #546a7b;\n}\n.navbar {\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.28);\n}\n.navbar-default {\n  border: none;\n}\n.navbar-default .navbar-toggle span.icon-bar {\n  width: 25px;\n  height: 4px;\n  background-color: #546a7b;\n}\n.navbar-default .navbar-toggle {\n  border: none;\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n.navbar-default .navbar-toggle:focus,\n.navbar-default .navbar-toggle:hover {\n  background-color: #fff;\n}\na.nav-buttons {\n  cursor: pointer;\n}\na#helen-launcher {\n  cursor: url(\"/images/dog.png\"), auto;\n}\na#helen-launcher img {\n  max-height: 50px;\n  max-width: 50px;\n}\n.navbar-brand {\n  padding-top: 0 !important;\n}\n.jumbotron {\n  background-color: #cc8b86;\n  margin-bottom: 0;\n}\n#sharkjaws {\n  background-color: #fff;\n  background-image: url(\"/images/helenvideo.gif\");\n  background-size: cover;\n  background-position: 60% center;\n  border-radius: 50%;\n  margin: auto;\n  height: 420px;\n  width: 420px;\n  border: 10px #b0c4b1 solid;\n  margin-top: 15px;\n}\n@media screen and (max-width: 480px) {\n  #sharkjaws {\n    height: 300px;\n    width: 300px;\n  }\n}\n@media screen and (max-width: 768px) {\n  #sharkjaws {\n    margin-top: 30px;\n  }\n}\n#helen-hero {\n  height: 500px;\n  text-align: center;\n}\n#helen-hero h1,\n#helen-hero h2 {\n  color: RGBA(255, 255, 255, 0.65);\n  font-weight: 600;\n}\n@media screen and (max-width: 480px) {\n  #helen-hero {\n    height: 370px;\n  }\n}\n#instagram {\n  background-color: #f7e1d7;\n}\n#instagram a:hover {\n  text-decoration: none;\n}\nimg.insta {\n  max-width: 100%;\n  border-radius: 50%;\n  border: 10px #b0c4b1 solid;\n  margin-bottom: 10px;\n}\n#qa {\n  background-color: #fff;\n}\n#qa h4 {\n  margin-bottom: 16px;\n}\n#qa .dashes {\n  padding: none;\n  margin: 0;\n}\n#qa .questions {\n  padding: none;\n  margin-top: 15px;\n}\n#qa .alt-background {\n  background-color: #f7e1d7;\n}\n.feature {\n  padding: 30px 5%;\n}\n#schedule {\n  background-color: #fff;\n}\ndiv.marquee {\n  white-space: no-wrap;\n  overflow: hidden;\n  color: #cc8b86;\n}\ndiv.marquee > div.marquee-text {\n  white-space: nowrap;\n  display: inline;\n  width: auto;\n}\n#schedule-directive hr {\n  margin-top: -5px;\n}\n#schedule-directive .row img {\n  width: 100%;\n  max-width: 400px;\n}\n#schedule-directive .schedule-description {\n  background-color: #fff;\n  min-height: 175px;\n  text-align: center;\n}\n#schedule-directive .schedule-description #desc-list {\n  text-align: center;\n}\n#schedule-directive .schedule-description ul {\n  padding: 0;\n  list-style-type: none;\n}\n#shin-shin-directive #youtube-container {\n  text-align: center;\n}\n#shin-shin-directive #youtube-container iframe {\n  height: 275px;\n  width: 450px;\n  max-width: 100%;\n}\n#helen-directive .modal-content {\n  border-radius: 50%;\n  margin: 0 auto;\n  padding: none;\n  width: 500px;\n  height: 500px;\n}\n@media screen and (max-width: 480px) {\n  #helen-directive .modal-content {\n    height: 320px;\n    width: 320px;\n  }\n}\n#helen-directive .modal-dialog {\n  margin: 0 auto;\n}\n#helen-directive .helen-image {\n  border-radius: 50%;\n  height: 100%;\n  width: 100%;\n  border: 12px solid #b0c4b1;\n}\n#helen-directive #modal-footer {\n  margin: 0 auto;\n  text-align: center;\n}\n#helen-directive #next-pudge,\n#helen-directive #close-modal {\n  margin-top: 5px;\n  border-radius: 50%;\n  border: 2px solid #fff;\n  height: 70px;\n  width: 70px;\n}\n#helen-directive #next-pudge {\n  margin-left: 5px;\n  background-color: #b0c4b1;\n}\n#helen-directive #close-modal {\n  margin-right: 5px;\n  background-color: #cc8b86;\n}\nhr {\n  border-top: 2px dotted #b0c4b1;\n}\n", ""]);
+	exports.push([module.id, "[ng:cloak] [ng-cloak] [data-ng-cloak] [x-ng-cloak] .ng-cloak .x-ng-cloak {\n  display: none !important;\n}\n.center {\n  text-align: center;\n  margin: 0 auto !important;\n  float: none !important;\n}\nbody {\n  background-color: #fff;\n  font-family: Tahoma, Geneva, sans-serif;\n  color: #546a7b;\n}\nbody h1,\nbody h2,\nbody h3,\nbody h4,\nbody h5,\nbody h6 {\n  font-family: 'Oxygen', sans-serif;\n}\nbody h1 {\n  color: #cc8b86;\n}\nbody h1.section-titles {\n  margin-top: -17px;\n  margin-bottom: 15px;\n}\nbody h2 {\n  color: #b0c4b1;\n}\nbody h4 {\n  line-height: 1.25em;\n}\nbody a {\n  color: #b0c4b1;\n}\nbody a:hover {\n  text-decoration: none;\n  color: #546a7b;\n}\n.navbar {\n  background-color: #fff;\n  box-shadow: 0 0 4px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.28);\n}\n.navbar-default {\n  border: none;\n}\n.navbar-default .navbar-toggle span.icon-bar {\n  width: 25px;\n  height: 4px;\n  background-color: #546a7b;\n}\n.navbar-default .navbar-toggle {\n  border: none;\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n.navbar-default .navbar-toggle:focus,\n.navbar-default .navbar-toggle:hover {\n  background-color: #fff;\n}\na.nav-buttons {\n  cursor: pointer;\n}\na#helen-launcher {\n  cursor: url(\"../images/dog.png\"), auto;\n}\na#helen-launcher img {\n  max-height: 50px;\n  max-width: 50px;\n}\n.navbar-brand {\n  padding-top: 0 !important;\n}\n.jumbotron {\n  background-color: #cc8b86;\n  margin-bottom: 0;\n}\n#sharkjaws {\n  background-color: #fff;\n  background-image: url(\"./images/helenvideo.gif\");\n  background-size: cover;\n  background-position: 60% center;\n  border-radius: 50%;\n  margin: auto;\n  height: 420px;\n  width: 420px;\n  border: 10px #b0c4b1 solid;\n  margin-top: 15px;\n}\n@media screen and (max-width: 480px) {\n  #sharkjaws {\n    height: 300px;\n    width: 300px;\n  }\n}\n@media screen and (max-width: 768px) {\n  #sharkjaws {\n    margin-top: 30px;\n  }\n}\n#helen-hero {\n  height: 500px;\n  text-align: center;\n}\n#helen-hero h1,\n#helen-hero h2 {\n  color: RGBA(255, 255, 255, 0.65);\n  font-weight: 600;\n}\n@media screen and (max-width: 480px) {\n  #helen-hero {\n    height: 370px;\n  }\n}\n#instagram {\n  background-color: #f7e1d7;\n}\n#instagram a:hover {\n  text-decoration: none;\n}\nimg.insta {\n  max-width: 100%;\n  border-radius: 50%;\n  border: 10px #b0c4b1 solid;\n  margin-bottom: 10px;\n}\n#qa {\n  background-color: #fff;\n}\n#qa h4 {\n  margin-bottom: 16px;\n}\n#qa .dashes {\n  padding: none;\n  margin: 0;\n}\n#qa .questions {\n  padding: none;\n  margin-top: 15px;\n}\n#qa .alt-background {\n  background-color: #f7e1d7;\n}\n.feature {\n  padding: 30px 5%;\n}\n#schedule {\n  background-color: #fff;\n}\ndiv.marquee {\n  white-space: no-wrap;\n  overflow: hidden;\n  color: #cc8b86;\n}\ndiv.marquee > div.marquee-text {\n  white-space: nowrap;\n  display: inline;\n  width: auto;\n}\n#schedule-directive hr {\n  margin-top: -5px;\n}\n#schedule-directive .row img {\n  width: 100%;\n  max-width: 400px;\n}\n#schedule-directive .schedule-description {\n  background-color: #fff;\n  min-height: 175px;\n  text-align: center;\n}\n#schedule-directive .schedule-description #desc-list {\n  text-align: center;\n}\n#schedule-directive .schedule-description ul {\n  padding: 0;\n  list-style-type: none;\n}\n#shin-shin-directive #youtube-container {\n  text-align: center;\n}\n#shin-shin-directive #youtube-container iframe {\n  height: 275px;\n  width: 450px;\n  max-width: 100%;\n}\n#helen-directive .modal-content {\n  border-radius: 50%;\n  margin: 0 auto;\n  padding: none;\n  width: 500px;\n  height: 500px;\n}\n@media screen and (max-width: 480px) {\n  #helen-directive .modal-content {\n    height: 320px;\n    width: 320px;\n  }\n}\n#helen-directive .modal-dialog {\n  margin: 0 auto;\n}\n#helen-directive .helen-image {\n  border-radius: 50%;\n  height: 100%;\n  width: 100%;\n  border: 12px solid #b0c4b1;\n}\n#helen-directive #modal-footer {\n  margin: 0 auto;\n  text-align: center;\n}\n#helen-directive #next-pudge,\n#helen-directive #close-modal {\n  margin-top: 5px;\n  border-radius: 50%;\n  border: 2px solid #fff;\n  height: 70px;\n  width: 70px;\n}\n#helen-directive #next-pudge {\n  margin-left: 5px;\n  background-color: #b0c4b1;\n}\n#helen-directive #close-modal {\n  margin-right: 5px;\n  background-color: #cc8b86;\n}\nhr {\n  border-top: 2px dotted #b0c4b1;\n}\n", ""]);
 
 	// exports
 
@@ -31565,7 +31565,7 @@
 	    var status = arguments.length <= 0 || arguments[0] === undefined ? 'working' : arguments[0];
 	    // default params
 	    var message = 'ES6'; // let
-	    console.log(message + ' is ' + status); // template string
+	    // console.log(message + ' is ' + status); // template string
 	  })();
 
 	  apiSvc.getInsta().then(function (data) {
@@ -31623,7 +31623,7 @@
 	    A: "¯\\_(ツ)_/¯"
 	  }, {
 	    Q: "Okay. Where can I stay?",
-	    A: ["We've booked a block of rooms at The Waterfront Hotel, which is one of the ", "nicer hotels in Oakland - the group rate code is KUCHIN-WALKER."].join('')
+	    A: ["We've booked a block of rooms at The Waterfront Hotel, which is one of the ", "nicer hotels in Oakland - the group name is kuchin-walker and the online code is 1610KUCHIN."].join('')
 	  }, {
 	    Q: "Damn, that hotel is expensive.",
 	    A: ["Yeah, it'll run you $289 a night, but it is right on the water in a great ", "part of town. That said, we realize that's a lot so we're working on ", "finding a more affordable spot. If you're inclined to investigate on ", "your own, give Emeryville hotels a shot or check out Airbnb."].join('')
@@ -31665,7 +31665,9 @@
 	      var octoberEnd = '2015-10';
 
 	      apiSvc.getCrime().then(function (crimeData) {
+	      	console.log(crimeData);
 	        scope.crimeResults = filterCrime(crimeData);
+	        console.log('crime res', scope.crimeResults);
 	      }, function (err) {
 	        if (err) {
 	          console.log('ERR', err);
@@ -31675,8 +31677,10 @@
 	      function filterCrime(crime) {
 	        return crime.reduce(function (memo, valObj) {
 	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {
+	          	console.log('true 1');
 	            var day = new Date(valObj.datetime);
 	            if (apiSvc.crimeDateRange.test(valObj.datetime)) {
+	              console.log('true 2');
 	              //just comparing largest geo ranges for now
 	              valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
 	              valObj.datetime = new Date(valObj.datetime);
@@ -31717,7 +31721,7 @@
 	      }, {
 	        image: './images/prawn-toasts-sketch.jpg',
 	        title: 'fri october 7, afternoonish',
-	        description: ['We \'re going down to SF City Hall to make it legal. We are trying ', 'to keep this portion of the celebration as low-key as possible. ', 'City Hall is stunning so people are more than welcome to come ', 'hang out, snap some pics, etc. but the ceremony itself ', 'will be about 30 seconds long and just us and our witness.'].join('')
+	        description: ['We \'re going down to SF City Hall to make it legal. We are trying ', 'to keep this portion of the celebration as low-key as possible. ', 'City Hall is stunning so people are more than welcome to come ', 'hang out, snap some pics, etc. but the ceremony itself ', 'will be about 30 seconds long and just us and our witness. The real party is the following day at Starline.'].join('')
 	      }, {
 	        image: './images/chinese-broccoli-sketch.jpg',
 	        title: 'fri october 7, eveningish',
@@ -31778,7 +31782,7 @@
 	        }
 	      };
 	    }
-	  }; ////end return
+	  }; //end return
 	});
 
 /***/ }
