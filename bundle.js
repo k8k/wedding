@@ -31668,8 +31668,7 @@
 
 	      function filterCrime(crime) {
 	        return crime.reduce(function (memo, valObj) {
-	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {
-	          	console.log('true 1');
+	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {	          	
 	            var day = new Date(valObj.datetime);	            
 	            valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
 	            valObj.datetime = new Date(valObj.datetime);
@@ -31683,11 +31682,10 @@
 	      }
 
 	      //begin jQuery animate
-	      var marquee = jQuery('div.marquee'); // jshint ignore:line
-	      var originalIndent = marquee.width();
+	      var marquee = jQuery('div.marquee'); // jshint ignore:line	      
 	      marquee.each(function () {
 	        var mar = jQuery(this),
-	            indent = mar.width(); // jshint ignore:line
+	            indent = (mar.width() / 2); // jshint ignore:line
 	        mar.marquee = function () {
 	          indent--;
 	          mar.css('text-indent', indent);
