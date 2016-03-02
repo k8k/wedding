@@ -31665,6 +31665,7 @@
 	      var octoberEnd = '2015-10';
 
 	      apiSvc.getCrime().then(function (crimeData) {
+	      	console.log(crimeData);
 	        scope.crimeResults = filterCrime(crimeData);
 	        console.log('crime res', scope.crimeResults);
 	      }, function (err) {
@@ -31676,8 +31677,10 @@
 	      function filterCrime(crime) {
 	        return crime.reduce(function (memo, valObj) {
 	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {
+	          	console.log('true 1');
 	            var day = new Date(valObj.datetime);
 	            if (apiSvc.crimeDateRange.test(valObj.datetime)) {
+	              console.log('true 2');
 	              //just comparing largest geo ranges for now
 	              valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
 	              valObj.datetime = new Date(valObj.datetime);
