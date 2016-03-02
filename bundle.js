@@ -31666,6 +31666,7 @@
 
 	      apiSvc.getCrime().then(function (crimeData) {
 	        scope.crimeResults = filterCrime(crimeData);
+	        console.log('crime res', scope.crimeResults);
 	      }, function (err) {
 	        if (err) {
 	          console.log('ERR', err);
