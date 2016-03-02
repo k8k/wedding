@@ -31671,8 +31671,7 @@
 	      function filterCrime(crime) {
 	        return crime.reduce(function (memo, valObj) {
 	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {	          	
-	            var day = new Date(valObj.datetime);
-	            console.log(valObj.datetime);
+	            var day = new Date(valObj.datetime);	            
 	            if (apiSvc.crimeDateRange.test(valObj.datetime)) {	              
 	              //just comparing largest geo ranges for now
 	              valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
