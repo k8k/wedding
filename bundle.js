@@ -662,7 +662,7 @@
 	__webpack_require__(4)();
 
 	var appModule = __webpack_require__(11);
-	console.log('bootstrapping angular');
+	// console.log('bootstrapping angular');
 
 	angular.element(document).ready(function () {
 	  angular.bootstrap(document, [appModule.name], {
@@ -31565,7 +31565,7 @@
 	    var status = arguments.length <= 0 || arguments[0] === undefined ? 'working' : arguments[0];
 	    // default params
 	    var message = 'ES6'; // let
-	    console.log(message + ' is ' + status); // template string
+	    // console.log(message + ' is ' + status); // template string
 	  })();
 
 	  apiSvc.getInsta().then(function (data) {
