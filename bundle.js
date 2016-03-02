@@ -31486,12 +31486,14 @@
 
 	angular.module('app', []).config(['$httpProvider', function ($httpProvider) {}]).factory('apiSvc', ['$http', '$q', function ($http, $q) {
 
-	  // Return public API.	  
+	  // Return public API.
+	  var octoberStart = /^2015-12/;
 	  return {
 	    getInsta: getInsta,
 	    getCrime: getCrime,
 	    getHelens: getHelens,
-	    crimeDescriptionKeys: ['VANDALISM', 'STOLEN VEHICLE', 'DISORDERLY CONDUCT', 'ROBBERY', 'BURG - AUTO', 'BURG - COMMERCIAL', 'BURG - RESIDENTIAL', 'PETTY THEFT', 'WEAPONS', 'NARCOTICS', 'THEFT', 'BURGLARY-AUTO', 'POSSESS NARCOTIC CONTROLLED SUBSTANCE', 'ARSON']	    
+	    crimeDescriptionKeys: ['VANDALISM', 'STOLEN VEHICLE', 'DISORDERLY CONDUCT', 'ROBBERY', 'BURG - AUTO', 'BURG - COMMERCIAL', 'BURG - RESIDENTIAL', 'PETTY THEFT', 'WEAPONS', 'NARCOTICS', 'THEFT', 'BURGLARY-AUTO', 'POSSESS NARCOTIC CONTROLLED SUBSTANCE', 'ARSON'],
+	    crimeDateRange: octoberStart
 	  };
 
 	  // ---
@@ -31659,7 +31661,8 @@
 	      var octoberEnd = '2015-10';
 
 	      apiSvc.getCrime().then(function (crimeData) {	      	
-	        scope.crimeResults = filterCrime(crimeData);	        
+	        scope.crimeResults = filterCrime(crimeData);
+	        console.log('crime res', scope.crimeResults);
 	      }, function (err) {
 	        if (err) {
 	          console.log('ERR', err);
@@ -31669,23 +31672,29 @@
 	      function filterCrime(crime) {
 	        return crime.reduce(function (memo, valObj) {
 	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {	          	
-	            var day = new Date(valObj.datetime);	            
-	            valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
-	            valObj.datetime = new Date(valObj.datetime);
-	            delete valObj.policebeat;
-	            delete valObj.state;
-	            delete valObj.casenumber;
-	            memo.push(valObj);
+	            var day = new Date(valObj.datetime);
+	            console.log(valObj.datetime);
+	            if (apiSvc.crimeDateRange.test(valObj.datetime)) {
+	              console.log('true 2');
+	              //just comparing largest geo ranges for now
+	              valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
+	              valObj.datetime = new Date(valObj.datetime);
+	              delete valObj.policebeat;
+	              delete valObj.state;
+	              delete valObj.casenumber;
+	              memo.push(valObj);
+	            }
 	          }
 	          return memo;
 	        }, []);
 	      }
 
 	      //begin jQuery animate
-	      var marquee = jQuery('div.marquee'); // jshint ignore:line	      
+	      var marquee = jQuery('div.marquee'); // jshint ignore:line
+	      var originalIndent = marquee.width();
 	      marquee.each(function () {
 	        var mar = jQuery(this),
-	            indent = (mar.width() / 2); // jshint ignore:line
+	            indent = mar.width(); // jshint ignore:line
 	        mar.marquee = function () {
 	          indent--;
 	          mar.css('text-indent', indent);
