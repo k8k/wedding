@@ -31660,10 +31660,8 @@
 	    link: function link(scope, elem, attrs) {
 	      var octoberEnd = '2015-10';
 
-	      apiSvc.getCrime().then(function (crimeData) {
-	      	console.log('data ', crimeData);	      	
-	        scope.crimeResults = filterCrime(crimeData);
-	        console.log('crime res', scope.crimeResults);
+	      apiSvc.getCrime().then(function (crimeData) {	      	
+	        scope.crimeResults = filterCrime(crimeData);	        
 	      }, function (err) {
 	        if (err) {
 	          console.log('ERR', err);
@@ -31675,8 +31673,7 @@
 	          if (!! ~apiSvc.crimeDescriptionKeys.indexOf(valObj.crimetype)) {	          	
 	            var day = new Date(valObj.datetime);
 	            console.log(valObj.datetime);
-	            if (apiSvc.crimeDateRange.test(valObj.datetime)) {
-	              console.log('true 2');
+	            if (apiSvc.crimeDateRange.test(valObj.datetime)) {	              
 	              //just comparing largest geo ranges for now
 	              valObj.datetime = valObj.datetime.replace(apiSvc.crimeDateRange, octoberEnd);
 	              valObj.datetime = new Date(valObj.datetime);
