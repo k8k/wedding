@@ -31660,7 +31660,8 @@
 	    link: function link(scope, elem, attrs) {
 	      var octoberEnd = '2015-10';
 
-	      apiSvc.getCrime().then(function (crimeData) {	      	
+	      apiSvc.getCrime().then(function (crimeData) {
+	      	console.log('data ', crimeData);	      	
 	        scope.crimeResults = filterCrime(crimeData);
 	        console.log('crime res', scope.crimeResults);
 	      }, function (err) {
